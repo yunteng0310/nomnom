@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nom Cafe 点餐</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>欢迎光临 Nom Cafe</h1>
+  </header>
+  <main>
+    <section id="menu">
+      <div class="item">
+        <h2>餐蛋面</h2>
+        <p>鸡蛋+午餐肉</p>
+        <span>RM 7.50</span>
+        <button onclick="addToCart('餐蛋面', 7.50)">加入购物车</button>
+      </div>
+    </section>
+    <section>
+      <label>
+        <input type="radio" name="type" value="堂食" checked> 堂食
+      </label>
+      <label>
+        <input type="radio" name="type" value="外带"> 外带
+      </label>
+      <textarea id="remark" placeholder="备注..."></textarea>
+    </section>
+    <section id="cart">
+      <h2>🛒 购物车</h2>
+      <ul id="cartItems"></ul>
+      <p>总价: RM <span id="total">0.00</span></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
