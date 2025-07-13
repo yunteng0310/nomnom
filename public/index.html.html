@@ -1,34 +1,34 @@
-
 <!DOCTYPE html>
 <html lang="zh">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content='width=device-width, initial-scale=1.0' />
   <title>Nom Cafe 点餐</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>欢迎光临 Nom Cafe</h1>
+    <h1>Nom Cafe 点餐系统</h1>
   </header>
   <main>
-    <section id="menu">
-      <div class="item">
-        <h2>餐蛋面</h2>
-        <p>鸡蛋+午餐肉</p>
-        <span>RM 7.50</span>
-        <button onclick="addToCart('餐蛋面', 7.50)">加入购物车</button>
-      </div>
-    </section>
+    <h2>🍽 主餐 Main Course</h2>
+    <div class="item"><h3>Grill Chicken Chop - Black Pepper</h3><p>RM 17.90</p><button onclick="addToCart('Grill Chicken Chop - Black Pepper', 17.90)">加入购物车</button></div>
+    <div class="item"><h3>Grill Pork Chop - Garlic Sauce</h3><p>RM 18.90</p><button onclick="addToCart('Grill Pork Chop - Garlic Sauce', 18.90)">加入购物车</button></div>
+
+    <h2>🍜 餐蛋面系列 Noodles</h2>
+    <div class="item"><h3>Luncheon Meat and Egg Noodles</h3><p>RM 7.50</p><button onclick="addToCart('Luncheon Meat and Egg Noodles', 7.50)">加入购物车</button></div>
+    <div class="item"><h3>Fried Prawn Egg Noodles</h3><p>RM 11.00</p><button onclick="addToCart('Fried Prawn Egg Noodles', 11.00)">加入购物车</button></div>
+
+    <h2>🥤 饮料 Drinks</h2>
+    <div class="item"><h3>Oolong Milk Tea</h3><p>RM 7.50</p><button onclick="addToCart('Oolong Milk Tea', 7.50)">加入购物车</button></div>
+    <div class="item"><h3>Grape Bingsu</h3><p>RM 8.80</p><button onclick="addToCart('Grape Bingsu', 8.80)">加入购物车</button></div>
+
     <section>
-      <label>
-        <input type="radio" name="type" value="堂食" checked> 堂食
-      </label>
-      <label>
-        <input type="radio" name="type" value="外带"> 外带
-      </label>
-      <textarea id="remark" placeholder="备注..."></textarea>
+      <label><input type="radio" name="type" value="堂食" checked> 堂食</label>
+      <label><input type="radio" name="type" value="外带"> 外带</label>
+      <textarea id="remark" placeholder="订单备注..."></textarea>
     </section>
+
     <section id="cart">
       <h2>🛒 购物车</h2>
       <ul id="cartItems"></ul>
